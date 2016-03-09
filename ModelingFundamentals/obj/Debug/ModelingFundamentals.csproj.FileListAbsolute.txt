@@ -1,0 +1,13 @@
+C:\Users\tangz\Documents\Visual Studio 2015\Projects\EF6Recipes\ModelingFundamentals\bin\Debug\ModelingFundamentals.exe.config
+C:\Users\tangz\Documents\Visual Studio 2015\Projects\EF6Recipes\ModelingFundamentals\bin\Debug\ModelingFundamentals.exe
+C:\Users\tangz\Documents\Visual Studio 2015\Projects\EF6Recipes\ModelingFundamentals\bin\Debug\ModelingFundamentals.pdb
+C:\Users\tangz\Documents\Visual Studio 2015\Projects\EF6Recipes\ModelingFundamentals\bin\Debug\EntityFramework.dll
+C:\Users\tangz\Documents\Visual Studio 2015\Projects\EF6Recipes\ModelingFundamentals\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tangz\Documents\Visual Studio 2015\Projects\EF6Recipes\ModelingFundamentals\bin\Debug\EntityFramework.xml
+C:\Users\tangz\Documents\Visual Studio 2015\Projects\EF6Recipes\ModelingFundamentals\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tangz\Documents\Visual Studio 2015\Projects\EF6Recipes\ModelingFundamentals\obj\Debug\ModelingFundamentals.csprojResolveAssemblyReference.cache
+C:\Users\tangz\Documents\Visual Studio 2015\Projects\EF6Recipes\ModelingFundamentals\obj\Debug\ModelingFundamentals.exe
+C:\Users\tangz\Documents\Visual Studio 2015\Projects\EF6Recipes\ModelingFundamentals\obj\Debug\ModelingFundamentals.pdb
+C:\Users\tangz\Source\Repos\EF6Recipes\ModelingFundamentals\bin\Debug\ModelingFundamentals.exe.config
+C:\Users\tangz\Source\Repos\EF6Recipes\ModelingFundamentals\obj\Debug\ModelingFundamentals.exe
+C:\Users\tangz\Source\Repos\EF6Recipes\ModelingFundamentals\obj\Debug\ModelingFundamentals.pdb

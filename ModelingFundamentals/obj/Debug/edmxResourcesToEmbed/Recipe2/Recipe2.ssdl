@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EF6RecipesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Meter">
+    <Key>
+      <PropertyRef Name="MeterId" />
+    </Key>
+    <Property Name="MeterId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MeterName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Poem">
+    <Key>
+      <PropertyRef Name="PoemId" />
+    </Key>
+    <Property Name="PoemId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PoetId" Type="int" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MeterId" Type="int" />
+  </EntityType>
+  <EntityType Name="Poet">
+    <Key>
+      <PropertyRef Name="PoetId" />
+    </Key>
+    <Property Name="PoetId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MiddleName" Type="nvarchar(max)" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“EF6Recipes.Chapter2.vwLibrary”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="vwLibrary">
+    <Key>
+      <PropertyRef Name="PoemId" />
+      <PropertyRef Name="Firstname" />
+      <PropertyRef Name="MiddleName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="Title" />
+      <PropertyRef Name="MeterName" />
+    </Key>
+    <Property Name="PoemId" Type="int" Nullable="false" />
+    <Property Name="Firstname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MiddleName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MeterName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Poem_Meter">
+    <End Role="Meter" Type="Self.Meter" Multiplicity="0..1" />
+    <End Role="Poem" Type="Self.Poem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Meter">
+        <PropertyRef Name="MeterId" />
+      </Principal>
+      <Dependent Role="Poem">
+        <PropertyRef Name="MeterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Poem_Poet">
+    <End Role="Poet" Type="Self.Poet" Multiplicity="0..1" />
+    <End Role="Poem" Type="Self.Poem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Poet">
+        <PropertyRef Name="PoetId" />
+      </Principal>
+      <Dependent Role="Poem">
+        <PropertyRef Name="PoetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EF6RecipesModelStoreContainer">
+    <EntitySet Name="Meter" EntityType="Self.Meter" Schema="Chapter2" store:Type="Tables" />
+    <EntitySet Name="Poem" EntityType="Self.Poem" Schema="Chapter2" store:Type="Tables" />
+    <EntitySet Name="Poet" EntityType="Self.Poet" Schema="Chapter2" store:Type="Tables" />
+    <EntitySet Name="vwLibrary" EntityType="Self.vwLibrary" store:Type="Views" store:Schema="Chapter2">
+      <DefiningQuery>SELECT 
+    [vwLibrary].[PoemId] AS [PoemId], 
+    [vwLibrary].[Firstname] AS [Firstname], 
+    [vwLibrary].[MiddleName] AS [MiddleName], 
+    [vwLibrary].[LastName] AS [LastName], 
+    [vwLibrary].[Title] AS [Title], 
+    [vwLibrary].[MeterName] AS [MeterName]
+    FROM [Chapter2].[vwLibrary] AS [vwLibrary]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Poem_Meter" Association="Self.FK_Poem_Meter">
+      <End Role="Meter" EntitySet="Meter" />
+      <End Role="Poem" EntitySet="Poem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Poem_Poet" Association="Self.FK_Poem_Poet">
+      <End Role="Poet" EntitySet="Poet" />
+      <End Role="Poem" EntitySet="Poem" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
