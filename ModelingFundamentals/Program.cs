@@ -19,8 +19,9 @@ namespace ModelingFundamentals
             //Recipe7.Recipe7Program.Run();
             //Recipe8.Recipe8Program.Run();
             //Recipe9.Recipe9Program.Run();
-            Recipe10.Recipe10Program.Run();
-            //Recipe11.Recipe11Program.Run();
+            //Recipe10.Recipe10Program.Run();
+            Recipe11.Recipe11Program.Run();
+            //Recipe12.Recipe12Program.Run();
             Console.ReadKey(true);
         }
     }

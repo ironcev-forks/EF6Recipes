@@ -61,6 +61,15 @@
     <Compile Include="Recipe10\FullTimeEmployee.cs" />
     <Compile Include="Recipe10\HourlyEmployee.cs" />
     <Compile Include="Recipe10\Recipe10Program.cs" />
+    <Compile Include="Recipe11\EFContext.cs" />
+    <Compile Include="Recipe11\Location.cs" />
+    <Compile Include="Recipe11\Park.cs" />
+    <Compile Include="Recipe11\Recipe11Program.cs" />
+    <Compile Include="Recipe12\Address.cs" />
+    <Compile Include="Recipe12\Agent.cs" />
+    <Compile Include="Recipe12\EFContext.cs" />
+    <Compile Include="Recipe12\Name.cs" />
+    <Compile Include="Recipe12\Recipe12Program.cs" />
     <Compile Include="Recipe1\Person.cs">
       <DependentUpon>PersonModel.tt</DependentUpon>
     </Compile>
@@ -178,7 +187,6 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Recipe11\" />
     <Folder Include="Recipe9\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
