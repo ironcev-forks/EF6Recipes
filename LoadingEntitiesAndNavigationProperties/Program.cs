@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QueryingAnEntityDataModel
+namespace LoadingEntitiesAndNavigationProperties
 {
     class Program
     {
@@ -17,16 +17,13 @@ namespace QueryingAnEntityDataModel
             //Recipe5.Recipe5Program.Run();
             //Recipe6.Recipe6Program.Run();
             //Recipe7.Recipe7Program.Run();
-            Recipe8.Recipe8Program.Run();
+            //Recipe8.Recipe8Program.Run();
             //Recipe9.Recipe9Program.Run();
             //Recipe10.Recipe10Program.Run();
             //Recipe11.Recipe11Program.Run();
             //Recipe12.Recipe12Program.Run();
             //Recipe13.Recipe13Program.Run();
-            //Recipe14.Recipe14Program.Run();
-            //Recipe15.Recipe15Program.Run();
-            //Recipe16.Recipe16Program.Run();
-            //Recipe17.Recipe17Program.Run();
+            Recipe14.Recipe14Program.Run();
             Console.ReadKey(true);
         }
     }
