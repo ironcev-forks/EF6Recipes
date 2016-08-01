@@ -13,40 +13,43 @@ namespace ModelingFundamentals.Recipe4
     {
         public static void  Run()
         {
-            //using (var context = new EFContext())
-            //{
-            //    var order = new Order
-            //    {
-            //        OrderId = 1,
-            //        OrderDate = new DateTime(2010, 1, 18)
-            //    };
-            //    var item = new Item
-            //    {
-            //        SKU = 1729,
-            //        Description = "Backpack",
-            //        Price = 29.97M
-            //    };
-            //    var oi1 = new OrderItem { Order = order, Item = item, Count = 1 };
-            //    item = new Item
-            //    {
-            //        SKU = 2929,
-            //        Description = "Water Filter",
-            //        Price = 13.97M
-            //    };
-            //    var oi2 = new OrderItem { Order = order, Item = item, Count = 3 };
-            //    item = new Item
-            //    {
-            //        SKU = 1847,
-            //        Description = "Camp Stove",
-            //        Price = 43.99M
-            //    };
-            //    var oi3 = new OrderItem { Order = order, Item = item, Count = 1 };
-            //    //context.Orders.Add(order);
-            //    context.OrderItem.Add(oi1);
-            //    context.OrderItem.Add(oi2);
-            //    context.OrderItem.Add(oi3);
-            //    context.SaveChanges();
-            //}
+            using (var context = new EFContext())
+            {
+                context.Database.ExecuteSqlCommand("delete from chapter2.OrderItems");
+                context.Database.ExecuteSqlCommand("delete from chapter2.Orders");
+                context.Database.ExecuteSqlCommand("delete from chapter2.Items");
+                var order = new Order
+                {
+                    OrderId = 1,
+                    OrderDate = new DateTime(2010, 1, 18)
+                };
+                var item = new Item
+                {
+                    SKU = 1729,
+                    Description = "Backpack",
+                    Price = 29.97M
+                };
+                var oi1 = new OrderItem { Order = order, Item = item, Count = 1 };
+                item = new Item
+                {
+                    SKU = 2929,
+                    Description = "Water Filter",
+                    Price = 13.97M
+                };
+                var oi2 = new OrderItem { Order = order, Item = item, Count = 3 };
+                item = new Item
+                {
+                    SKU = 1847,
+                    Description = "Camp Stove",
+                    Price = 43.99M
+                };
+                var oi3 = new OrderItem { Order = order, Item = item, Count = 1 };
+                //context.Orders.Add(order);
+                context.OrderItem.Add(oi1);
+                context.OrderItem.Add(oi2);
+                context.OrderItem.Add(oi3);
+                context.SaveChanges();
+            }
             using (var context = new EFContext())
             {
                 foreach (var order in context.Orders)

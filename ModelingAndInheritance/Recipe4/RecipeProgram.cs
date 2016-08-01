@@ -17,7 +17,7 @@ namespace ModelingAndInheritance.Recipe4
     /// <summary>
     /// 6-4  使用TPH建模自引用关系
     /// </summary>
-    public class Recipe4Program
+    public class RecipeProgram
     {
         public static void Run()
         {

@@ -10,15 +10,15 @@ namespace ModelingAndInheritance
     {
         static void Main(string[] args)
         {
-            //Recipe1.Recipe1Program.Run();
-            //Recipe2.Recipe2Program.Run();
-            //Recipe3.Recipe3Program.Run();
-            //Recipe4.Recipe4Program.Run();
-            //Recipe5.Recipe5Program.Run();
-            Recipe6.Recipe6Program.Run();
-            //Recipe7.Recipe7Program.Run();
-            //Recipe8.Recipe8Program.Run();
-            //Recipe9.Recipe9Program.Run();
+            //Recipe1.RecipeProgram.Run();
+            //Recipe2.RecipeProgram.Run();
+            //Recipe3.RecipeProgram.Run();
+            //Recipe4.RecipeProgram.Run();
+            //Recipe5.RecipeProgram.Run();
+            //Recipe6.RecipeProgram.Run();
+            //Recipe7.RecipeProgram.Run();
+            //Recipe8.RecipeProgram.Run();
+            Recipe9.RecipeProgram.Run();
             //Recipe10.Recipe10Program.Run();
             //Recipe11.Recipe11Program.Run();
             //Recipe12.Recipe12Program.Run();

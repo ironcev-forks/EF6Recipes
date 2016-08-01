@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace ModelingFundamentals.Recipe4
 {
+    [Table("Items", Schema = "Chapter2")]
     public class Item
     {
         public Item()

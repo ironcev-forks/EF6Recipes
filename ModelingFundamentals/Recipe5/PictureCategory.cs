@@ -14,10 +14,12 @@ namespace ModelingFundamentals.Recipe5
         {
             Subcategories = new List<PictureCategory>();
         }
-        public int PictureCategoryId { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
+        public int CategoryId { get; private set; }
         public string Name { get; set; }
         [ForeignKey("ParentCategory")]
-        public int? ParentCategoryId { get; set; }
+        public int? ParentCategoryId { get; private set; }
         
         public virtual PictureCategory ParentCategory { get; set; }//书中没有virtual关键字，这会导致导航属性不能加载，后面的输出就只有根目录！
         public virtual List<PictureCategory> Subcategories { get; set; }

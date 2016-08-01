@@ -12,7 +12,6 @@ namespace ModelingFundamentals.Recipe7
         public EFContext() : base("EFconnectionString") { }
         public DbSet<Photograph> Photographs { get; set; }
         public DbSet<PhotographFullImage> PhotographFullImages { get; set; }
-        public object Businesses { get; internal set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

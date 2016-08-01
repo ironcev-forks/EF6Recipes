@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ModelingFundamentals.Recipe4
 {
+    [Table("OrderItems", Schema = "Chapter2")]
     public class OrderItem
     {
         [Key,Column(Order=0)]

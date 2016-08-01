@@ -17,7 +17,7 @@ namespace ModelingAndInheritance.Recipe1
     /// <summary>
     /// 6-1  获取多对多关联中的链接表
     /// </summary>
-    public class Recipe1Program
+    public class RecipeProgram
     {
         public static void Run()
         {

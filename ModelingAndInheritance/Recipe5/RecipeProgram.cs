@@ -17,7 +17,7 @@ namespace ModelingAndInheritance.Recipe5
     /// <summary>
     ///6-5  使用TPH建模自引用关系
     /// </summary>
-    public class Recipe5Program
+    public class RecipeProgram
     {
         public static void Run()
         {

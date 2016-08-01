@@ -19,12 +19,12 @@ namespace ModelingFundamentals.Recipe6
                 .Map(m =>
                 {
                     m.Properties(p => new { p.SKU, p.Description, p.Price });
-                    m.ToTable("Product", "Chapter2");
+                    m.ToTable("Products", "Chapter2");
                 })
                  .Map(m =>
                  {
                      m.Properties(p => new { p.SKU, p.ImageURL, });
-                     m.ToTable("ProductWebInfo", "Chapter2");
+                     m.ToTable("ProductWebInfos", "Chapter2");
                  });
         }
 

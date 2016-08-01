@@ -57,40 +57,47 @@
     <Compile Include="Recipe1\EFContext.cs" />
     <Compile Include="Recipe1\Event.cs" />
     <Compile Include="Recipe1\Organizer.cs" />
-    <Compile Include="Recipe1\Recipe1Program.cs" />
+    <Compile Include="Recipe1\RecipeProgram.cs" />
     <Compile Include="Recipe2\EFContext.cs" />
-    <Compile Include="Recipe2\Recipe2Program.cs" />
+    <Compile Include="Recipe2\RecipeProgram.cs" />
     <Compile Include="Recipe2\Task.cs" />
     <Compile Include="Recipe2\Worker.cs" />
     <Compile Include="Recipe2\WorkerTask.cs" />
     <Compile Include="Recipe3\EFContext.cs" />
     <Compile Include="Recipe3\Product.cs" />
-    <Compile Include="Recipe3\Recipe3Program.cs" />
+    <Compile Include="Recipe3\RecipeProgram.cs" />
     <Compile Include="Recipe4\EFContext.cs" />
     <Compile Include="Recipe4\Person.cs" />
-    <Compile Include="Recipe4\Recipe4Program.cs" />
+    <Compile Include="Recipe4\RecipeProgram.cs" />
     <Compile Include="Recipe5\Category.cs" />
     <Compile Include="Recipe5\EFContext.cs" />
-    <Compile Include="Recipe5\Recipe5Program.cs" />
+    <Compile Include="Recipe5\RecipeProgram.cs" />
     <Compile Include="Recipe6\Drug.cs" />
     <Compile Include="Recipe6\EFContext.cs" />
     <Compile Include="Recipe6\Experimental.cs" />
     <Compile Include="Recipe6\Medicine.cs" />
-    <Compile Include="Recipe6\Recipe6Program.cs" />
+    <Compile Include="Recipe6\RecipeProgram.cs" />
     <Compile Include="Recipe7\EFContext.cs" />
     <Compile Include="Recipe7\Instructor.cs" />
     <Compile Include="Recipe7\Principal.cs" />
-    <Compile Include="Recipe7\Recipe7Program.cs" />
+    <Compile Include="Recipe7\RecipeProgram.cs" />
     <Compile Include="Recipe7\Staff.cs" />
+    <Compile Include="Recipe8\CommissionedEmployee.cs" />
+    <Compile Include="Recipe8\EFContext.cs" />
+    <Compile Include="Recipe8\Employee.cs" />
+    <Compile Include="Recipe8\HourlyEmployee.cs" />
+    <Compile Include="Recipe8\RecipeProgram.cs" />
+    <Compile Include="Recipe8\SalariedEmployee.cs" />
+    <Compile Include="Recipe9\EFContext.cs" />
+    <Compile Include="Recipe9\RecipeProgram.cs" />
+    <Compile Include="Recipe9\RefurbishedToy.cs" />
+    <Compile Include="Recipe9\Toy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Recipe8\" />
-    <Folder Include="Recipe9\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

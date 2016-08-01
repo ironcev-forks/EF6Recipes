@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ModelingFundamentals.Recipe3
 {
+    [Table("Artists", Schema = "Chapter2")]
     public class Artist
     {
         public Artist()

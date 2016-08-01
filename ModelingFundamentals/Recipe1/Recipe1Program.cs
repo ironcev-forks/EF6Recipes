@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ModelingFundamentals.Recipe1
-{
-    public class Recipe1Program
+namespace ModelingFundamentals.Recipe1 { 
+
+    /// <summary>
+    /// 2-1 创建一个简单模型
+    /// </summary>
+public class Recipe1Program
     {
         public static void Run()
         {

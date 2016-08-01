@@ -12,12 +12,12 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ModelingAndInheritance.Recipe7
+namespace ModelingAndInheritance.Recipe6
 {
     /// <summary>
-    ///6-5  使用TPH建模自引用关系
+    ///6-6  映射派生类中的NULL条件
     /// </summary>
-    public class Recipe7Program
+    public class RecipeProgram
     {
         public static void Run()
         {

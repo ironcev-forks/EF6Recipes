@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 
 namespace ModelingFundamentals.Recipe2
 {
-     class Recipe2Program
+    /// <summary>
+    /// 2-2 从已存在的数据库创建模型
+    /// </summary>
+    class Recipe2Program
     {
         public static void Run()
         {

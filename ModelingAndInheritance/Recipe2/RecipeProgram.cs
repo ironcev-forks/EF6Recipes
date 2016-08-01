@@ -17,7 +17,7 @@ namespace ModelingAndInheritance.Recipe2
     /// <summary>
     /// 6-2  将链接表表示成一个实体
     /// </summary>
-    public class Recipe2Program
+    public class RecipeProgram
     {
         public static void Run()
         {

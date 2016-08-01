@@ -17,7 +17,7 @@ namespace ModelingAndInheritance.Recipe3
     /// <summary>
     /// 6-3  自引用的多对多关系建模
     /// </summary>
-    public class Recipe3Program
+    public class RecipeProgram
     {
         public static void Run()
         {

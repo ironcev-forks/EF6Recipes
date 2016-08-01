@@ -12,12 +12,9 @@ namespace ModelingAndInheritance.Recipe7
     {
         public EFContext() : base("EFconnectionString") { }
 
-        public DbSet<Drug> Drugs { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Medicine>().Map(p => p.Requires(d => d.AcceptedDate).HasValue());
-            modelBuilder.Entity<Experimental>().Map(p => p.Requires("AcceptedDate").HasValue((DateTime?)null));
-            base.OnModelCreating(modelBuilder);
+
         }
       
 
